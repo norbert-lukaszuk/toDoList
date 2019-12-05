@@ -395,7 +395,8 @@ li {
 
 #toList {
   font-size: 25px;
-  max-width: 250px; }
+  max-width: 250px;
+  padding: 10px; }
 
 ul {
   list-style-type: none;
