@@ -394,7 +394,8 @@ li {
   text-decoration: none; }
 
 #toList {
-  font-size: 25px; }
+  font-size: 25px;
+  max-width: 250px; }
 
 ul {
   list-style-type: none;
