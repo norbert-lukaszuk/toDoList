@@ -317,7 +317,7 @@ html {
 
 body {
   color: #F9C802;
-  background: #000; }
+  background: black; }
 
 .button {
   -ms-flex-item-align: center;
@@ -337,6 +337,14 @@ body {
   padding: 6px;
   border-width: 0; }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .form {
   min-width: 270px;
   -ms-flex-item-align: center;
@@ -352,6 +360,29 @@ body {
   color: black;
   font-size: large; }
 
+.delete {
+  width: 38px;
+  height: 38px;
+  background-color: #e64653;
+  color: white;
+  padding-top: 4px;
+  border-radius: 50%; }
+
+div {
+  border-radius: 10px;
+  background-color: lightsteelblue;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  min-width: 300px; }
+
+.done {
+  background-color: rgba(180, 179, 179, 0.644); }
+
 .input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,9 +393,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px; }
+  font-size: 25px;
+  background-color: black; }
+
+.item {
+  text-decoration: none; }
 
 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-radius: 10px;
   background-color: lightsteelblue;
   color: black;
@@ -378,7 +419,6 @@ li {
 
 .lineTrough {
   text-decoration: line-through;
-  background-color: rgba(180, 179, 179, 0.644);
   color: rgba(0, 0, 0, 0.596); }
 
 .list {
@@ -388,10 +428,21 @@ li {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  background-color: black; }
 
 .notDone {
-  text-decoration: none; }
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 #toList {
   font-size: 25px;
@@ -399,10 +450,16 @@ li {
   padding: 10px; }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   list-style-type: none;
   text-decoration: none;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   padding: 0; }
 
